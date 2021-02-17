@@ -1,0 +1,106 @@
+archetype (adl_version=1.4; uid=49b95a6d-9f7e-4a09-95cc-06120de246c1)
+	openEHR-EHR-ACTION.nds_tsum_cancer_treatments.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2021-02-17">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"6b5e07cfa9be3dea69b11da8969e6c0e">
+		["build_uid"] = <"1f654408-e802-30e8-97a1-0683eb077a36">
+	>
+
+definition
+	ACTION[at0000] matches {    -- nds tsum cancer treatments
+		description matches {
+			ITEM_TREE[at0002] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0010,    -- 1
+									at0011]    -- 2
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0001] matches {*}    -- Item tree
+		}
+		ism_transition matches {
+			ISM_TRANSITION[at0003] matches {    -- Completed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0003]    -- Completed
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"nds tsum cancer treatments">
+					description = <"nds tsum cancer treatments">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Completed">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"1">
+					description = <"1">
+				>
+				["at0011"] = <
+					text = <"2">
+					description = <"2">
+				>
+			>
+		>
+	>
