@@ -20,7 +20,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
-      "MD5-CAM-1.0.1" : "5acf66c16a15b8a247c82e7a0fa9be57",
+      "MD5-CAM-1.0.1" : "8948a3ff33c00bf127f00cce84309b02",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -4954,6 +4954,12 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Diagnosis Status",
+            "description" : "Contextual or temporal qualifier for a specified problem or diagnosis."
+          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
