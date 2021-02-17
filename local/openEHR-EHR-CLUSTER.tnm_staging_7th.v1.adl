@@ -28,7 +28,7 @@ description
 	>
 	other_details = <
 		["references"] = <"Sobin LH. TNM Classification of Malignant Tumours 7th Edition.  John Wiley and Sons; 2009.">
-		["MD5-CAM-1.0.1"] = <"DDDA3560727BB4E2A3373FACF8F9C61B">
+		["MD5-CAM-1.0.1"] = <"2fb63920d3abd422844e353b788f74c3">
 		["build_uid"] = <"c5ce44bd-9f48-32a2-8139-c4dc86c2db74">
 	>
 
@@ -37,22 +37,22 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Primary tumour (T)
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Regional lymph nodes (N)
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Distant metastasis (M)
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Residual tumour (R)
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0046] occurrences matches {0..1} matches {    -- Histopathological grading (G)
