@@ -20,7 +20,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
-      "MD5-CAM-1.0.1" : "4d71505fb1032ae8cfbd2046951e9789",
+      "MD5-CAM-1.0.1" : "d948d48435ae6159a88796537484ae80",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -3345,7 +3345,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Investigations",
+            "text" : "End of Treatment Investigations",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
