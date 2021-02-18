@@ -20,7 +20,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
-      "MD5-CAM-1.0.1" : "b69fa6813cf4aa6bfa6684a56655a6ef",
+      "MD5-CAM-1.0.1" : "1552b60199e4fdb0abdff37befee1f45",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -14395,7 +14395,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "CancerCare Team",
+            "text" : "CancerCare Care Team",
             "description" : "Care team details aligned with FHIR resource."
           },
           "ac0.1" : {
@@ -14769,7 +14769,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Health Care Professionals",
+            "text" : "Health and Care Professionals",
             "description" : "Practitioner details aligned with FHIR resource."
           },
           "ac0.1" : {
