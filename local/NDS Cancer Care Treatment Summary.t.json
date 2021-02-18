@@ -20,7 +20,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
-      "MD5-CAM-1.0.1" : "2c5f1da3ac45d8f7c51922a0558e931d",
+      "MD5-CAM-1.0.1" : "2bfbd85a52a75ee12828d38cb019e6a6",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -7315,7 +7315,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0070.1",
+              "nodeId" : "at0014.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -7355,12 +7355,12 @@
             "text" : "Completed",
             "description" : "The procedure has been performed and all associated clinical activities completed."
           },
-          "at0070.1" : {
+          "at0014.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "Intent",
-            "description" : "The clinical or process-related reason for the procedure.",
-            "comment" : "Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'."
+            "code" : "at0014.1",
+            "text" : "Treatment intent",
+            "description" : "Reason that the activity or care pathway step for the identified procedure was carried out.",
+            "comment" : "For example: the reason for the cancellation or suspension of the procedure."
           }
         },
         "ar-sy" : { },
