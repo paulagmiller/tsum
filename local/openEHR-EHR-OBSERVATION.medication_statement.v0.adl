@@ -34,7 +34,7 @@ Not to be used to record details about specific medication related activities, s
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"F0BD3CD67E237EBE2605AA68875B8BC0">
+		["MD5-CAM-1.0.1"] = <"56eb6777d2cfed079cdb068e4a8454fe">
 		["build_uid"] = <"c2d7c10c-f262-420d-b758-27b69dd8a27b">
 		["revision"] = <"0.0.1-alpha">
 	>
