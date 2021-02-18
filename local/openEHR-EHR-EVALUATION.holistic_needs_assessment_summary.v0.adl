@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b14a70c4d430dad82f88bf007f85a0d3">
+		["MD5-CAM-1.0.1"] = <"94dd712ac78a5391e28c868cdc441a01">
 		["build_uid"] = <"cd64ebc5-fa41-3b6c-be1f-609c138c901b">
 	>
 
@@ -47,7 +47,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Link to HNA
+					allow_archetype CLUSTER[at0005] occurrences matches {0..1} matches {    -- Link to HNA
 						include
 							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.multimedia\.v0/}
 					}
@@ -81,7 +81,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- Questions
+					allow_archetype CLUSTER[at0014] occurrences matches {0..1} matches {    -- Questions
 						include
 							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.issue_uk\.v0/}
 					}
@@ -89,7 +89,14 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0012] matches {*}    -- Item tree
+			ITEM_TREE[at0012] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0016] occurrences matches {0..*} matches {    -- Any other context
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
 		}
 	}
 
@@ -152,6 +159,10 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Summary of HNA">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Any other context">
 					description = <"">
 				>
 			>
